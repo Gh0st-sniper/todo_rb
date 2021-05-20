@@ -1,0 +1,28 @@
+<%= form_with model: @todo do |f| %>
+
+    <div class="field>
+
+    <%= f.label :Enter_to_do, class:"label" %><br>
+
+    <%= f.text_field :title , class: "control" %>
+
+    <% @todo.errors.full_messages_for(:title).each do |msg| %>
+
+        <%= msg %> 
+
+
+        <% end %> 
+
+
+
+    </div>
+
+    <br>
+    <br>
+    <div>
+
+    <%= f.submit  class:"button is-link" %>
+    </div>
+
+
+<% end %>

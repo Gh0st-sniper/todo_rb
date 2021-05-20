@@ -1,0 +1,13 @@
+<div class= "column">
+
+<h1 class="title is-3"> <%= @todo.title %> </h1> 
+
+
+
+<%= link_to 'Edit Todo' , edit_todo_path(@todo), class: "button is-warning" %>
+
+<%= link_to 'Delete Todo', todo_path(@todo), method: :delete, data: { confirm: "Are you sure ?" }, class: "button is-danger" %> 
+
+</div>
+
+
